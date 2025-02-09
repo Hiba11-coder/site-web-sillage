@@ -1,0 +1,93 @@
+ /* STYLE CSS de LA PAGE PAIEMENT*/
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(251, 251, 251);
+    text-align: center;
+}
+header {
+    background: #fffdfd;
+    color: white;
+    padding: 10px 0;
+}
+.payment-methods, .payment-form {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.payment-form:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+fieldset {
+    border: 2px solid #353635;
+    border-radius: 10px;
+    padding: 15px;
+    transition: border-color 0.3s ease-in-out;
+}
+fieldset:hover {
+    border-color: #b40707;
+}
+legend {
+    font-weight: bold;
+    color: #2e2f2e;
+}
+form label, form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+input:focus {
+    border-color: #6a6e6b;
+    box-shadow: 0 0 5px rgba(144, 4, 4, 0.5);
+    outline: none;
+}
+button {
+    background:#b80303;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    animation: hoverEffect 1.5s infinite ease-in-out;
+}
+@keyframes hoverEffect {
+    0% { transform: scale(1); background: #000000; }
+    50% { transform: scale(1.05); background: #d03eda; }
+    100% { transform: scale(1); background:#a40000; }
+}
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background:  rgb(164, 9, 9);
+    color: white;
+}
+.payment-methods ul {
+    list-style: none;
+    padding: 0;
+}
+
+.payment-methods li {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+.payment-methods i {
+    font-size: 24px;
+    color: #db0707;
+}

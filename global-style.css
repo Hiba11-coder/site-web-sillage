@@ -1,0 +1,400 @@
+/* Style global */   
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#fff(246, 242, 200);
+    color: #4a4a4a;
+    overflow-x: hidden; 
+}
+.bande-rouge { 
+    background-color: rgb(164, 9, 9); 
+    color: white; 
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap; 
+    position: relative; 
+    top: 0;
+    left: 0; 
+    width: 100%; 
+    text-align: center; 
+    padding: 10px 0;
+    z-index: 9999; 
+    line-height: 1.5; 
+}
+.bande-rouge span {
+    display: block; 
+    margin-bottom: 5px; 
+    word-wrap: break-word;
+}
+.bande-rouge .offre {
+    font-size: 18px; 
+}
+.bande-rouge .livraison {
+    font-size: 14px; 
+}
+ .welcome-banner {
+    background-color:#d8aaea;
+    color: rgb(37, 33, 33);
+    text-align: center;
+    padding: 9px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family:'Cormorant Garamond', serif;
+} 
+header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+.section-title{
+    font-family:'Cormorant Garamond', serif;
+}
+h4{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
+    font-style: italic;
+}
+/* Icône de recherche */
+.icon-search {
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.icon-cart{
+    color: #333;
+}
+
+.logo-and-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 10px 0;
+        }
+
+        /* Menu */
+        .menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            margin: 0 15px;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            padding: 5px 0;
+            position: relative;
+        }
+
+        /* Trait fixe au survol */
+        .menu li a:hover::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: black;
+            bottom: -3px; /* Ajuste la position du trait */
+            left: 0;
+        }
+ /* image background */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+          
+          .slideshow {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            cursor: pointer;
+          }
+          /* Ajouter une pause au survol */
+           .slideshow:hover .slide {
+            animation-play-state: paused;
+  }
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: slideshow 11s infinite; /* Durée totale = 3 images × 3s */
+  }
+  
+  .slide:nth-child(1) { animation-delay: 0s; }
+  .slide:nth-child(2) { animation-delay: 3s; }
+  .slide:nth-child(3) { animation-delay: 6s; }
+  
+  @keyframes slideshow {
+    0% {
+      opacity: 0;
+      transform: scale(1.1);
+    }
+    5% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    31.66% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    36.66% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1.1);
+    }
+  }
+main {
+    padding: 20px;
+}
+
+.best-sellers {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.best-sellers h2 {
+    color: #d17d7d;
+    margin-bottom: 20px;
+}
+
+.category {
+    margin-bottom: 40px;
+}
+
+.category h3 {
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}
+
+.parfums {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.parfum {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.parfum:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.parfum img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+.parfum:hover img {
+    transform: scale(1.05);
+}
+
+.parfum h4 {
+    color: #d17d7d;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(164, 9, 9);
+    color: #ffffff;
+    margin-top: 20px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+.footer h3 {
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+ /* Animation pour les images */
+        
+ .custom-card {
+    position: relative;
+    overflow: hidden;
+}
+.custom-card .img-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 100%; /* Carré parfait */
+}
+.custom-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease, transform 0.3s ease;
+}
+.custom-card img.notes-img {
+    opacity: 0;
+}
+
+/* Affichage des notes au hover */
+.custom-card:hover img.notes-img {
+    opacity: 1;
+}
+
+.custom-card:hover img.main-img {
+    opacity: 0;
+}
+
+.section-title {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.horizontal-scroll {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.custom-card {
+    min-width: 250px;
+    flex-shrink: 0;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+.transparent-line {
+    border: none;
+    height: 2px; /* Épaisseur de la ligne */
+    background-color: rgba(0, 0, 0, 0.2); 
+    margin: 20px 0;
+}
+.paragraphe1{
+    
+    display: inline;
+}
+.paragraphe2{
+    display: inline;
+}
+.paragraphe2 a {
+    text-decoration: none; 
+    position: relative;
+    color: #f8ebeb; 
+    font-weight: bold;
+}
+
+.paragraphe2 a:hover {
+    color: #0f0808; 
+}
+
+.paragraphe2 a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Place le trait sous le texte */
+    width: 100%;
+    height: 2px; /* Épaisseur du trait */
+    background-color: #101010;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Code css de la page coffret&cadeaux */
+.card-img-top {
+    height: 250px;
+    object-fit: cover; 
+    object-position: center;
+    width: 100%; /
+}
+.card {
+    overflow: visible !important; /* Annule le overflow:hidden */
+    position: static !important; /* Réinitialise la position */
+}
+.animated-btn {
+    animation: colorChange 1s infinite alternate;
+}
+@keyframes colorChange {
+    0% { background-color: #292726; }
+    50% { background-color: #e22e2e; }
+    100% { background-color: #bd0c0c; }
+}
+
+#parafemme { font-family:'Times New Roman', Times, serif;
+    color: rgb(70, 63, 64);
+}
+#parahomme{
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(67, 67, 73);
+}
+.text-center mb-4{ font-family:Arial, Helvetica, sans-serif;
+}
+.prix-original {
+    text-decoration: line-through; 
+    color: grey; 
+    margin-right: 10px; 
+}
+
+.prix-solde {
+    color: red; 
+    font-weight: bold; 
+}
+
+
+

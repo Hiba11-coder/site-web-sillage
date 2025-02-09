@@ -1,0 +1,57 @@
+/* CSS à la page panier */
+  /* Appliquer flexbox à l'ensemble du header pour aligner correctement */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;  
+}
+/* Conteneur de la navigation alignée à droite */
+.nav-left {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+/* Alignement de l'image du logo et de la navigation */
+.logo-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+main {
+    padding: 20px;
+  }
+  h4 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
+    font-style: italic;
+  }
+  .cart {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #5a5757;
+    border-radius: 5px;
+    background-color: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .order-button {
+    display: inline-block;
+    background-color: #737070;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+.order-button:hover {
+    background-color: #b40f0f;
+}
+  main li:hover{
+    background-color: rgb(162, 165, 169);
+  }
